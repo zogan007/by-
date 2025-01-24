@@ -1,0 +1,131 @@
+/* การตั้งค่าทั่วไป */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* พื้นหลัง GIF */
+header.hero {
+    position: relative;
+    height: 100vh;
+    background: url('img/2fabf3ceb5a35b51a70e27137d56e4d2.gif') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+header.hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+header.hero .hero-text {
+    position: relative;
+    z-index: 2;
+}
+
+header.hero .hero-text h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+header.hero .hero-text p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+header.hero .cta-button {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    color: white;
+    background: #0077b6;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+header.hero .cta-button:hover {
+    background: #023e8a;
+}
+
+/* ส่วนเมนูวิชา */
+section.menu-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 2rem auto;
+    max-width: 1200px;
+    padding: 1rem;
+}
+
+.menu-item {
+    flex: 1 1 calc(33.333% - 2rem);
+    margin: 1rem;
+    text-align: center;
+}
+
+.menu-card {
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.menu-img-vertical {
+    width: 100%;
+    height: 400px; /* ขนาดภาพแนวตั้ง */
+    object-fit: cover;
+    border-bottom: 2px solid #0077b6;
+}
+
+.menu-card h2 {
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+    color: #023e8a;
+}
+
+/* Footer */
+footer.footer {
+    text-align: center;
+    padding: 2rem;
+    background: #023e8a;
+    color: white;
+    font-size: 1rem;
+}
+
+footer.footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0.5rem 0;
+}
+
+footer.footer ul li {
+    margin: 0.2rem 0;
+}
+
+footer.footer ul li a {
+    color: #00d4ff;
+    text-decoration: none;
+}
+
+footer.footer ul li a:hover {
+    text-decoration: underline;
+}
